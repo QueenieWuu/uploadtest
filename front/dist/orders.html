@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta content="email=no" name="format-detection" />
+	<title></title>
+	<link href="bundle/base.css" rel="stylesheet">
+</head>
+<body>
+	<header></header>
+	<nav></nav>
+	<div class="container">
+		<!-- 具体页面内容 -->
+		<div class="orders bg-gray">
+			<div class="w">
+				<div class="bg-white content-item">
+					<div class="cf">
+						<h2 class="title fl">
+							订单列表
+						</h2>
+						<!-- <div class="btn btn-green-outline btn-wide add-btn fr">
+							<span class="add-symbol f-white f24">+</span>
+							添加订单
+						</div> -->
+					</div>
+					<ul id="orderTabs" class="red-title cf f-white bg-red">
+						<li data-status="1" class="fl">
+							<span>
+								待处理
+								<i id="todo" class="pop-num">
+									<b></b>
+									0
+								</i>
+							</span>
+						</li>
+						<li data-status="4" class="fl">
+							<span>
+								处理中
+								<i id="process" class="pop-num">
+									<b></b>
+									0
+								</i>
+							</span>
+						</li>
+						<li data-status="2" class="fl">
+							<span>
+								已完成
+								<i id="finish" class="pop-num">
+									<b></b>
+									0
+								</i>
+							</span>
+						</li>
+						<li data-status="3" class="fl">
+							<span>
+								已失效
+								<i id="fail" class="pop-num">
+									<b></b>
+									0
+								</i>
+							</span>
+						</li>
+						<li data-status="5" class="fl">
+							<span>
+								退款中
+								<i id="cancel" class="pop-num">
+									<b></b>
+									0
+								</i>
+							</span>
+						</li>
+					</ul>
+					<div id="searchBox" class="cf search-box hide">
+						<input id="text" type="text" class="form fl" placeholder="输入订单号查询"/>
+						<div class="date-search fr">
+							<input id="startDate" type="text" class="date-ipt" />
+							<span class="f-green">—</span>
+							<input id="endDate" type="text" class="date-ipt" />
+							<span id="search" class="search-btn"></span>
+						</div>
+					</div>
+					<ul id="list" class="orders-item">
+						<li><div class="loading"><span></span></div></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="lib/jquery/jquery-2.1.4.min.js"></script>
+	<script src="lib/jquery-ui/jquery-ui.min.js"></script>
+	<script src="lib/jquery-ui/datepicker-zh-CN.js"></script>
+	<script src="bundle/core.js"></script>
+	<script>
+		$(function(){
+			GY.renderOrderList();
+		});
+	</script>
+</body>
+</html>

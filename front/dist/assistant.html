@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta content="email=no" name="format-detection" />
+	<title></title>
+	<link href="bundle/base.css" rel="stylesheet">
+</head>
+<body>
+	<header></header>
+	<nav></nav>
+	<div class="container">
+		<!-- 具体页面内容 -->
+		<div class="assistant bg-gray">
+			<div class="w">
+				<div class="bg-white content-item">
+					<div class="cf">
+						<h2 class="title fl">
+							店员信息
+						</h2>
+						<div id="add" class="btn btn-green-outline btn-wide add-btn fr">
+							<span class="add-symbol f-white f24">+</span>
+							添加店员
+						</div>
+					</div>
+					<ul class="cf bg-red f-white assistant-title">
+						<li class="fl p1">头像</li>
+						<li class="fl p2">姓名</li>
+						<li class="fl p3">性别</li>
+						<li class="fl p4">手机</li>
+						<li class="fl p5">岗位</li>
+						<li class="fl p6">评分</li>
+						<li class="fl p7">操作</li>
+					</ul>
+					<ul id="list" class="assistant-item f-black">
+						<li><div class="loading"><span></span></div></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="lib/jquery/jquery-2.1.4.min.js"></script>
+	<script src="bundle/core.js"></script>
+	<script>
+		$(function(){
+			GY.renderAssistant();
+		});
+	</script>
+</body>
+</html>

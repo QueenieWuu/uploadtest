@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta content="email=no" name="format-detection" />
+	<title></title>
+	<link href="bundle/base.css" rel="stylesheet">
+</head>
+<body>
+	<header></header>
+	<nav></nav>
+	<div class="container">
+		<!-- 具体页面内容 -->
+		<div class="index">
+			<div class="w">
+				<div id="store"><div class="loading"><span></span></div></div>
+				<div class="bg-white mb10 content-item">
+					<h2 class="title">今日关键指标</h2>
+					<ul class="cf index-indicators">
+						<li class="fl cf">
+							<div class="fl f-white">
+								<p class="f15">销量</p>
+								<p class="mt10">
+									<span id="salesIndicators" class="f24">0</span> 元
+								</p>
+							</div>
+							<div class="fr index-circle bg-white">
+								<i class="index-circle-ico1"></i>
+							</div>
+						</li>
+						<li class="fl">
+							<div class="fl f-white">
+								<p class="f15">关注人数</p>
+								<p class="mt10">
+									<span id="focusIndicators" class="f24">0</span> 人
+								</p>
+							</div>
+							<div class="fr index-circle bg-white">
+								<i class="index-circle-ico2"></i>
+							</div>
+						</li>
+						<li class="fl">
+							<div class="fl f-white">
+								<p class="f15">接单量</p>
+								<p class="mt10">
+									<span id="orderIndicators" class="f24">0</span> 单
+								</p>
+							</div>
+							<div class="fr index-circle bg-white">
+								<i class="index-circle-ico3"></i>
+							</div>
+						</li>
+						<li class="fl">
+							<div class="fl f-white">
+								<p class="f15">好评率</p>
+								<p id="praiseIndicators" class="f24 mt10">0%</p>
+							</div>
+							<div class="fr index-circle bg-white">
+								<i class="index-circle-ico4"></i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="bg-white mar5 content-item">
+					<div class="cf">
+					<h2 class="title fl">关键指标趋势图</h2>
+					<div class="date-search fr">
+						<input id="startDate" type="text" class="date-ipt" />
+						<span class="f-green">—</span>
+						<input id="endDate" type="text" class="date-ipt" />
+						<span id="search" class="search-btn"></span>
+					</div>
+					</div>
+					<ul id="args" class="red-title cf f-white bg-red">
+						<li data-args="1" class="fl active">
+							<span>销量</span>
+						</li>
+						<li data-args="2" class="fl">
+							<span>关注人数</span>
+						</li>
+						<li data-args="3" class="fl">
+							<span>接单量</span>
+						</li>
+						<li data-args="4" class="fl">
+							<span>好评率</span>
+						</li>
+					</ul>
+					<div id="chart" class="chart"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="lib/jquery/jquery-2.1.4.min.js"></script>
+	<script src="lib/jquery-ui/jquery-ui.min.js"></script>
+	<script src="lib/jquery-ui/datepicker-zh-CN.js"></script>
+	<script src="lib/echarts/echarts.js"></script>
+	<script src="bundle/core.js"></script>
+	<script>
+		$(function(){
+			GY.renderIndex();
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta content="email=no" name="format-detection" />
+	<title></title>
+	<link href="static/style/base.css" rel="stylesheet">
+</head>
+<body>
+	<header></header>
+	<nav></nav>
+	<div class="container">
+		<!-- 具体页面内容 -->
+		<div class="index bg-white">
+			<div class="w">
+				<!-- 步骤条 -->
+				<ul class="step">
+					<li class="finish">
+						<div class="tag">
+							<span></span>
+							<i></i>
+						</div>
+						<p>待接单</p>
+						<div class="step-arrow">
+							<em></em>
+							<span></span>
+						</div>
+					</li>
+					<li class="cur">
+						<div class="tag">
+							<span></span>
+							<i></i>
+						</div>
+						<p>准备药品</p>
+						<div class="step-arrow">
+							<em></em>
+							<span></span>
+						</div>
+					</li>
+					<li>
+						<div class="tag">
+							<span></span>
+							<i></i>
+						</div>
+						<p>等待配送</p>
+						<div class="step-arrow">
+							<em></em>
+							<span></span>
+						</div>
+					</li>
+					<li>
+						<div class="tag">
+							<span></span>
+							<i></i>
+						</div>
+						<p>配送中</p>
+						<div class="step-arrow">
+							<em></em>
+							<span></span>
+						</div>
+					</li>
+					<li>
+						<div class="tag">
+							<span></span>
+							<i></i>
+						</div>
+						<p>完成</p>
+						<div class="step-arrow">
+							<em></em>
+							<span></span>
+						</div>
+					</li>
+				</ul><br />
+				<ul class="step-point">
+					<li class="finish">
+						<div class="tag">
+							<span></span>
+							<i></i>
+						</div>
+						<p class="spacer3">待接单</p>
+						<div class="line"></div>
+					</li>
+					<li class="cur">
+						<div class="tag">
+							<span></span>
+							<i></i>
+						</div>
+						<p class="spacer4">准备药品</p>
+						<div class="line"></div>
+					</li>
+					<li>
+						<div class="tag">
+							<span></span>
+							<i></i>
+						</div>
+						<p class="spacer4">等待配送</p>
+						<div class="line"></div>
+					</li>
+					<li>
+						<div class="tag">
+							<span></span>
+							<i></i>
+						</div>
+						<p class="spacer3">配送中</p>
+						<div class="line"></div>
+					</li>
+					<li>
+						<div class="tag">
+							<span></span>
+							<i></i>
+						</div>
+						<p>完成</p>
+						<div class="line"></div>
+					</li>
+				</ul><br />
+				<input type="text" class="form" /><br />
+				<textarea class="form"></textarea><br />
+				<select class="form">
+					<option>123</option>
+					<option>123</option>
+				</select><br />
+				<div class="select select-orange">
+					<span></span>
+				</div>
+				<div class="select select-orange active">
+					<span></span>
+				</div>
+				<div class="select select-green">
+					<span></span>
+				</div>
+				<div class="select select-green active">
+					<span></span>
+				</div>
+				<div class="select select-point">
+					<span></span>
+				</div>
+				<div class="select select-point active">
+					<span></span>
+				</div><br /><br />
+				<a href="#" class="btn btn-green">btn</a>
+				<div class="btn btn-orange">btn</div>
+				<div class="btn btn-white-outline">btn</div>
+				<div class="btn btn-green-outline">btn</div><br /><br />
+				<a href="#" class="btn btn-green btn-wide">btn</a>
+				<div class="btn btn-orange btn-wide">btn</div>
+				<div class="btn btn-white-outline btn-wide">btn</div>
+				<div class="btn btn-green-outline btn-wide">btn</div><br /><br />
+				<a href="#" class="btn btn-green btn-lg">btn</a>
+				<div class="btn btn-orange btn-lg">btn</div>
+				<div class="btn btn-white-outline btn-lg">btn</div>
+				<div class="btn btn-green-outline btn-lg">btn</div><br />
+				<div id="map" style="height:500px;"></div>
+			</div>
+		</div>
+	</div>
+	<!-- 添加店员 
+	<div class="dialog">
+		<div class="mask"></div>
+		<div class="dialog-wrap members">
+			<div class="dialog-header">
+				<h3>添加店员</h3>
+				<span class="closed"></span>
+			</div>
+			<div class="dialog-body">
+				<dl>
+					<dt>用户姓名：</dt>
+					<dd><input type="text" class="form" /></dd>
+					<dt>性别：</dt>
+					<dd>
+						<select class="form">
+							<option>123</option>
+							<option>123</option>
+						</select>
+					</dd>
+					<dt>岗位：</dt>
+					<dd>
+						<select class="form">
+							<option>123</option>
+							<option>123</option>
+						</select>
+					</dd>
+					<dt>手机号：</dt>
+					<dd><input type="text" class="form" /></dd>
+				</dl>
+				<div class="upload">
+					<span></span>
+				</div>
+			</div>
+			<div class="dialog-action">
+				<div class="btn btn-green-outline btn-wide">取消</div>
+				<div class="btn btn-green btn-wide">确定</div>
+			</div>
+		</div>
+	</div>
+	-->
+	<!-- 添加备注 
+	<div class="dialog">
+		<div class="mask"></div>
+		<div class="dialog-wrap note">
+			<div class="dialog-header">
+				<h3>添加备注</h3>
+				<span class="closed"></span>
+			</div>
+			<div class="dialog-body">
+				<div class="reason">
+					<div class="items">
+						<div class="select select-green active">
+							<span></span>
+						</div>
+						商品修改
+					</div>
+					<div class="items">
+						<div class="select select-green">
+							<span></span>
+						</div>
+						价钱修改
+					</div>
+					<div class="items">
+						<div class="select select-green">
+							<span></span>
+						</div>
+						其他
+					</div>
+				</div>
+				<div class="text">
+					<textarea class="form" rows="6"></textarea>
+				</div>
+			</div>
+			<div class="dialog-action">
+				<div class="btn btn-green-outline btn-wide">取消</div>
+				<div class="btn btn-green btn-wide">确定</div>
+			</div>
+		</div>
+	</div>
+	-->
+	<!-- 选择店员
+	<div class="dialog">
+		<div class="mask"></div>
+		<div class="dialog-wrap select-members">
+			<div class="dialog-header">
+				<h3>选择店员</h3>
+				<span class="closed"></span>
+			</div>
+			<div class="dialog-body">
+				<ul class="thead">
+					<li>
+						<div class="col selected">选择</div>
+						<div class="col name">姓名</div>
+						<div class="col sex">性别</div>
+						<div class="col phone">手机</div>
+						<div class="col jobs">岗位</div>
+					</li>
+				</ul>
+				<ul class="list">
+					<li>
+						<div class="col selected">
+							<div class="select select-orange">
+								<span></span>
+							</div>
+						</div>
+						<div class="col name">姓名姓名</div>
+						<div class="col sex">男</div>
+						<div class="col phone">13811111111</div>
+						<div class="col jobs">岗位</div>
+					</li>
+				</ul>
+			</div>
+			<div class="dialog-action">
+				<div class="btn btn-green-outline btn-wide">取消</div>
+				<div class="btn btn-green btn-wide">确定</div>
+			</div>
+		</div>
+	</div>
+	-->
+	<!--  
+	<div class="dialog">
+		<div class="mask"></div>
+		<div class="dialog-wrap drop-order">
+			<div class="dialog-header">
+				<h3>选择店员</h3>
+				<span class="closed"></span>
+			</div>
+			<div class="dialog-body">
+				<ul>
+					<li>
+						<div class="select select-point">
+							<span></span>
+						</div>
+						没有用户需要的货品
+					</li>
+					<li>
+						<div class="select select-point">
+							<span></span>
+						</div>
+						无人配送
+					</li>
+					<li>
+						<div class="select select-point">
+							<span></span>
+						</div>
+						其他理由
+					</li>
+					<li>
+						<textarea class="form" rows="6"></textarea>
+					</li>
+				</ul>
+			</div>
+			<div class="dialog-action">
+				<div class="btn btn-green-outline btn-wide">取消</div>
+				<div class="btn btn-green btn-wide">确定</div>
+			</div>
+		</div>
+	</div>
+	-->
+	<div class="dialog">
+		<div class="mask"></div>
+		<div class="dialog-wrap input-money">
+			<div class="dialog-header">
+				<h3>添加备注</h3>
+				<span class="closed"></span>
+			</div>
+			<div class="dialog-body">
+				<div class="text">
+					<input id="input" type="text" class="form" />
+				</div>
+			</div>
+			<div class="dialog-action">
+				<div class="btn btn-green-outline btn-wide">取消</div>
+				<div id="submit" class="btn btn-green btn-wide">确定</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="dialog">
+		<div class="mask"></div>
+		<div class="dialog-wrap info">
+			<div class="dialog-header">
+				<h3>提示</h3>
+				<span class="closed"></span>
+			</div>
+			<div class="dialog-body">
+				<p>提示提示提示提示提示提示</p>
+			</div>
+			<div class="dialog-action">
+				<div class="btn btn-green-outline btn-wide">取消</div>
+				<div class="btn btn-green btn-wide">确定</div>
+			</div>
+		</div>
+	</div> -->
+	<script src="dist/lib/jquery/jquery-2.1.4.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$('#submit').click(function(){
+			console.log(/^(([1-9]\d{0,9})|0)(\.\d{1,2})?$/.test($('#input').val()));
+		});
+	</script>
+</body>
+</html>

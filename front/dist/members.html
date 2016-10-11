@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta content="email=no" name="format-detection" />
+	<title></title>
+	<link href="bundle/base.css" rel="stylesheet">
+</head>
+<body>
+	<header></header>
+	<nav></nav>
+	<div class="container">
+		<!-- 具体页面内容 -->
+		<div class="members bg-gray">
+			<div class="w">
+				<div class="bg-white mb10 content-item">
+					<div class="cf">
+						<h2 class="title fl">新增粉丝人数趋势表</h2>
+						<div class="date-search fr">
+							<input id="startDate"type="text" class="date-ipt" readonly />
+							<span class="f-green">—</span>
+							<input id="endDate" type="text" class="date-ipt" readonly />
+							<span id="search" class="search-btn"></span>
+						</div>
+					</div>
+					<!-- 图表 -->
+					<div id="chart" class="chart"></div>
+				</div>
+				<ul class="members-cnotent cf">
+					<li class="fl bg-white">
+						<h2 class="title">筛选结果</h2>
+						<div>
+							<span>
+								粉丝人数:  
+								<em id="focus" class="f-green f30">0</em>人 
+							</span>
+							        
+							<span>
+								占总人数:
+								<em id="focusPercent" class="f-green f30">0%</em>
+							</span>
+							<span>
+								订单数：
+								<em id="order" class="f-green f30">0</em>单
+							</span>
+						</div>
+					</li>
+					<li class="fl bg-white">
+						<span class="bg-green">
+							<i></i>
+						</span>
+						<p id="focusSum" class="f-green f30">0</p>
+						<p>关注总人数</p>
+					</li>
+					<li class="fl bg-white">
+						<span class="bg-red">
+							<i></i>
+						</span>
+						<p id="focusToday" class="f-red f30">0</p>
+						<p>今日关注人数</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="lib/jquery/jquery-2.1.4.min.js"></script>
+	<script src="lib/jquery-ui/jquery-ui.min.js"></script>
+	<script src="lib/jquery-ui/datepicker-zh-CN.js"></script>
+	<script src="lib/echarts/echarts.js"></script>
+	<script src="bundle/core.js"></script>
+	<script>
+		$(function(){
+			GY.renderMembers();
+		});
+	</script>
+</body>
+</html>

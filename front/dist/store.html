@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta content="email=no" name="format-detection" />
+	<title></title>
+	<link href="bundle/base.css" rel="stylesheet">
+</head>
+<body>
+	<header></header>
+	<nav></nav>
+	<div class="container">
+		<!-- 具体页面内容 -->
+		<div class="drugstore-info bg-gray">
+			<div class="w">
+				<div class="drugstore-info-title bg-white content-item">
+					<h2 class="title">药店信息</h2>
+				</div>
+				<div id="store" class="drugstore-info-content bg-white f-gray cf">
+					<div class="loading"><span></span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="lib/jquery/jquery-2.1.4.min.js"></script>
+	<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=XH7BZ-FB4AD-JJS45-PQUP5-3QAV2-CJBE4"></script>
+	<script src="bundle/core.js"></script>
+	<script>
+		$(function(){
+			GY.renderStore();
+		});
+	</script>
+</body>
+</html>
